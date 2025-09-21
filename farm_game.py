@@ -1,6 +1,8 @@
 from xvfbwrapper import Xvfb
-vdisplay = Xvfb()
+vdisplay = Xvfb(width=1280, height=720)
 vdisplay.start()
+from ursina import application
+application.audio_manager = None  # disable audio
 from ursina import *
 import math
 
