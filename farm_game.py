@@ -1,3 +1,6 @@
+from xvfbwrapper import Xvfb
+vdisplay = Xvfb()
+vdisplay.start()
 from ursina import *
 import math
 
@@ -109,3 +112,4 @@ class FarmGame(Ursina):
 # ---------------- Run the Game ----------------
 if __name__ == "__main__":
     FarmGame()
+vdisplay.stop()
