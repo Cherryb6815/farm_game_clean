@@ -1,0 +1,2 @@
+ursina==3.0.1
+xvfbwrapper
